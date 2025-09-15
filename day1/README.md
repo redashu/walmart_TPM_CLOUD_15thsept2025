@@ -57,3 +57,10 @@ assets  elements.html  generic.html  html5up-phantom.zip  images  index.html  LI
 [ashutoshhsingh93@ashuvm1 ~]$ 
 
 ```
+
+### Installing httpd 
+
+```
+sudo dnf install httpd -y 
+
+```
