@@ -64,3 +64,46 @@ assets  elements.html  generic.html  html5up-phantom.zip  images  index.html  LI
 sudo dnf install httpd -y 
 
 ```
+
+### copy content to app server
+
+
+```
+ sudo cp -rf html-sample-app/*   /var/www/html/
+```
+
+### follow the rest 
+
+```
+ashutoshhsingh93@ashuvm1 ~]$ ls
+html-sample-app
+[ashutoshhsingh93@ashuvm1 ~]$ ls /var/www/html/
+[ashutoshhsingh93@ashuvm1 ~]$ ls
+html-sample-app
+[ashutoshhsingh93@ashuvm1 ~]$ sudo cp -rf html-sample-app/   /var/www/html/
+[ashutoshhsingh93@ashuvm1 ~]$ 
+[ashutoshhsingh93@ashuvm1 ~]$ ls /var/www/html/
+html-sample-app
+[ashutoshhsingh93@ashuvm1 ~]$ sudo cp -rf html-sample-app/*   /var/www/html/
+[ashutoshhsingh93@ashuvm1 ~]$ 
+[ashutoshhsingh93@ashuvm1 ~]$ ls /var/www/html/
+assets  elements.html  generic.html  html5up-phantom.zip  html-sample-app  images  index.html  LICENSE.txt  README.txt
+[ashutoshhsingh93@ashuvm1 ~]$ 
+[ashutoshhsingh93@ashuvm1 ~]$ sudo systemctl start httpd
+[ashutoshhsingh93@ashuvm1 ~]$ sudo systemctl status httpd
+● httpd.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; preset: disabled)
+     Active: active (running) since Mon 2025-09-15 18:41:20 UTC; 5s ago
+       Docs: man:httpd.service(8)
+   Main PID: 85890 (httpd)
+     Status: "Started, listening on: port 80"
+      Tasks: 177 (limit: 10622)
+     Memory: 14.3M (peak: 14.7M)
+        CPU: 92ms
+     CGroup: /system.slice/httpd.service
+             ├─85890 /usr/sbin/httpd -DFOREGROUND
+             ├─85891 /usr/sbin/httpd -DFOREGROUND
+             ├─85892 /usr/sbin/httpd -DFOREGROUND
+             ├─85893 /usr/sbin/httpd -DFOREGROUND
+             └─85894 /usr/sbin/httpd -DFOREGROUND
+```
