@@ -33,3 +33,11 @@
 ## solving problems of containers in scale env using K8s / openshift 
 
 <img src="d3.png">
+
+## TPM ensures product meets external commitments using SLA
+
+<img src="sla.png">
+
+### SLA ,vs SLO vs SLI 
+
+<img src="sla2.png">
