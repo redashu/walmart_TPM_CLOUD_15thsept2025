@@ -16,4 +16,8 @@
 
 <img src="cap1.png">
 
+### CLoud IAAS pricing model understanding 
+
+
+<img src="cap2.png">
 
