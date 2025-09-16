@@ -11,3 +11,9 @@
 ### for HA -- Region , av zones
 
 <img src="rev3.png">
+
+## Understanding CapEx vs OpEX 
+
+<img src="cap1.png">
+
+
