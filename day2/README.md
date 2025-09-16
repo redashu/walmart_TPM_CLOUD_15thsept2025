@@ -21,3 +21,15 @@
 
 <img src="cap2.png">
 
+
+## Understanding monolith system desing of app 
+
+<img src="d1.png">
+
+## in Microservices framework of desing -- vm vs containrs 
+
+<img src="d2.png">
+
+## solving problems of containers in scale env using K8s / openshift 
+
+<img src="d3.png">
